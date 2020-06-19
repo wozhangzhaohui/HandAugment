@@ -6,7 +6,7 @@ The code for paper: "HandAugment: A Simple Data Augmentation Method for Depth-Ba
 https://arxiv.org/abs/2001.00702
 
 
-## The code will be released soon (before 2020-May-20)!
+## The code will be released soon (before 2020-June-30)!
 
 
 ## HandAugment Architecture
