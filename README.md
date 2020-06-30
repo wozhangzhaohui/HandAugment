@@ -6,7 +6,37 @@ The code for paper: "HandAugment: A Simple Data Augmentation Method for Depth-Ba
 https://arxiv.org/abs/2001.00702
 
 
-## The code will be released soon (before 2020-June-30)!
+## Updates !!!!
+
+**(2020-June-30)** upload test script and pretrained model.
+
+## Required libraries
+
+Python 3.6  
+Numpy 1.17.2  
+PyTorch 1.0.1  
+OpenCV 4.1
+
+
+## Usage
+1. Clone this repo
+    ```
+    git clone https://github.com/wozhangzhaohui/HandAugment.git
+    cd HandAugment
+    ```
+2. Download Hands19 dataset from [HANDS19 website](https://sites.google.com/view/hands2019/challenge).
+Replace spaces in file path with underscores "_"
+and link HANDS19 folder by ``` ln -s your-hands19-folder-path dataset/HANDS19_Challenge/```
+3. Run the test script by command: ```bash run_test.sh```, the result is saved in output folder "output/stage1/result.txt".
+4. The result file in "output/stage1/result.zip" can be submitted directly to [Hands19Task1](https://competitions.codalab.org/competitions/20913)
+
+
+## Pre-trained model
+We provide two stages pre-trained model for Hands19Task1 dataset.
+
+Intermediate score at stage0 can reach 14.06
+
+Final score at stage1 can reach 12.99
 
 
 ## HandAugment Architecture
