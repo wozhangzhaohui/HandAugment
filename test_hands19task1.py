@@ -1,6 +1,7 @@
 import os, sys
 import argparse
 import torch
+from model.efficientnet_pytorch import EfficientNet
 from data.util import norm2world
 from data.hands19task1 import Hands19Task1TestDataset, get_center_from_bbx, fx, fy, ppx, ppy, cube_len, joint_n
 
@@ -13,7 +14,8 @@ def unit_test(args):
     batch_size = args.batch_size
 
     print('load model')
-    net = torch.load(model_path)
+    net = EfficientNet.from_name('efficientnet-b0', num_classes=joint_n * 3)
+    net.load_state_dict(torch.load(model_path))
     if isinstance(net, torch.nn.DataParallel):
         net = net.module
     net = net.to('cuda').eval()

@@ -26,7 +26,7 @@ OpenCV 4.1
     ```
 2. Download Hands19 dataset from [HANDS19 website](https://sites.google.com/view/hands2019/challenge).
 Replace spaces in file path with underscores "_"
-and link HANDS19 folder by ``` ln -s your-hands19-folder-path dataset/HANDS19_Challenge/```
+and link HANDS19 folder by ``` mkdir dataset; ln -s your-hands19-folder-path dataset/HANDS19_Challenge```
 3. Run the test script by command: ```bash run_test.sh```, the result is saved in output folder "output/stage1/result.txt".
 4. The result file in "output/stage1/result.zip" can be submitted directly to [Hands19Task1](https://competitions.codalab.org/competitions/20913)
 
